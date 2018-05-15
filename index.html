@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Uploading files</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <h1>Загрузка файлов на сервер</h1>
+    <!-- Тип кодирования данных, enctype, ДОЛЖЕН БЫТЬ указан ИМЕННО так -->
+    <form enctype="multipart/form-data" action="http://localhost/uploading/php/upload.php" method="POST">
+        <!-- Поле MAX_FILE_SIZE должно быть указано до поля загрузки файла -->
+        <input type="hidden" name="MAX_FILE_SIZE" value="30000" />
+        <!-- Название элемента input определяет имя в массиве $_FILES -->
+        Отправить этот файл: <input name="userfile" type="file" id="file"/>
+    <input type="submit" value="Send File" />
+    </form>
+
+    <h2>Drug and drop</h2>
+    <div id="drop_zone" class="standart">
+        <p id="log">Drag one or more files to this Drop Zone ...</p>
+        <div id="progress_bar"></div>
+    </div>
+</body>
+</html>
