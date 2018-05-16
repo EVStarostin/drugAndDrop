@@ -3,7 +3,7 @@
 // вместо $_FILES.
 
 // $uploaddir = 'C:\\xampp\\htdocs\\uploading\\storage\\';
-$uploaddir = '/public_html/upload-files/storage';
+$uploaddir = 'storage/';
 $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
 
 echo '<pre>';

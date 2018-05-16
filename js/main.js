@@ -78,7 +78,7 @@ function upload(file) {
         } else {
         log("error " + this.status);
         }
-        setTimeout(() => {
+        setTimeout(function() {
             document.getElementById("progress_bar").style.width = "0";
             document.getElementById('log').innerHTML = "Drag one or more files to this Drop Zone ...";
         }, 2000);
