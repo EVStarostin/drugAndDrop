@@ -85,7 +85,7 @@ function upload(file) {
     };
 
     var formElement = document.querySelector("form");
-    xhr.open("POST", "http://localhost/uploading/php/upload.php", true);
+    xhr.open("POST", "https://evstar.000webhostapp.com/upload-files/upload.php", true);
     var formData = new FormData();
     formData.append("userfile", file);
     xhr.send(formData);

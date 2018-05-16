@@ -2,7 +2,8 @@
 // В PHP 4.1.0 и более ранних версиях следует использовать $HTTP_POST_FILES
 // вместо $_FILES.
 
-$uploaddir = 'C:\\xampp\\htdocs\\uploading\\storage\\';
+// $uploaddir = 'C:\\xampp\\htdocs\\uploading\\storage\\';
+$uploaddir = '/public_html/upload-files/storage';
 $uploadfile = $uploaddir . basename($_FILES['userfile']['name']);
 
 echo '<pre>';
